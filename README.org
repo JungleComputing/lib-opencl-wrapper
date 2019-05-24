@@ -1,0 +1,14 @@
+#+title: lib-opencl-wrapper
+
+* Introduction
+
+Lib-opencl-wrapper is a library that provides convenience functions to
+call an OpenCL function.
+
+* Building the library
+
+#+begin_src sh
+git clone https://github.com/JungleComputing/lib-opencl-wrapper.git
+cd lib-opencl-wrapper/src
+make
+#+end_src
