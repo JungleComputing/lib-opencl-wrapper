@@ -15,8 +15,9 @@ DEPFLAGS	=
 
 OBJ		= $(SRC:%.cpp=%.o)
 
-.PHONY:		clean
+.PHONY:		all clean
 
+all: $(LIBRARY)
 
 $(LIBRARY): $(DEPFILE) $(OBJ) 
 	$(AR) $(AR_FLAGS) $@ $(OBJ) 
