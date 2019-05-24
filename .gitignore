@@ -1,0 +1,4 @@
+/src/.depends
+/src/OpenCL.o
+/src/OpenCLFile.o
+/src/libopencl-wrapper.a
