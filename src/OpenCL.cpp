@@ -67,10 +67,10 @@ namespace opencl_private {
     std::vector<Platform> platforms;
     Platform::get(&platforms);
 
-    //Platform& platform = getPlatformWithType(deviceType, platforms);
+    Platform& platform = getPlatformWithType(deviceType, platforms);
 
     cl_context_properties cprops[3] = 
-      {CL_CONTEXT_PLATFORM, (cl_context_properties)(platforms[0])(), 0};
+      {CL_CONTEXT_PLATFORM, (cl_context_properties)(platform)(), 0};
 
     context = Context(deviceType, cprops);
   }
